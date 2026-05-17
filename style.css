@@ -1,0 +1,141 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background: #0077cc;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Helps responsiveness */
+}
+
+nav h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#themeButton {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: white;
+    color: #0077cc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sections */
+section {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+    background: white;
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Contact button */
+#contactButton {
+    padding: 0.75rem 1.5rem;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactButton:hover {
+    background: #005fa3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #222;
+    color: white;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+.dark-mode header {
+    background: #1e1e1e;
+}
+
+.dark-mode .hero,
+.dark-mode .project-card {
+    background: #1f1f1f;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 150px;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+}
